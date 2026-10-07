@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Image */
+        .free-image {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 25px;
+        }
+
+        .free-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        /* Buttons */
+        .whatsapp-btn,
+        .call-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            width: 220px;
+            padding: 14px 20px;
+
+            margin: 8px;
+
+            color: white;
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .call-btn {
+            background: #1877f2;
+        }
+
+        .whatsapp-btn:hover,
+        .call-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .whatsapp-btn i,
+        .call-btn i {
+            font-size: 22px;
+        }
+
+
+        /* =========================
+           Mobile
+        ========================= */
+        @media (max-width: 576px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .free-image {
+                margin-bottom: 15px;
+            }
+
+            .free-image img {
+                border-radius: 8px;
+            }
+
+            .whatsapp-btn,
+            .call-btn {
+                width: 100%;
+                max-width: 350px;
+                margin: 6px auto;
+                padding: 13px;
+                font-size: 17px;
+            }
+
+            .whatsapp-btn i,
+            .call-btn i {
+                font-size: 21px;
+            }
+        }
+
+
+        /* =========================
+           Tablet
+        ========================= */
+        @media (min-width: 577px) and (max-width: 991px) {
+
+            body {
+                padding: 20px;
+            }
+
+            .free-image {
+                max-width: 750px;
+            }
+
+            .whatsapp-btn,
+            .call-btn {
+                width: 250px;
+                font-size: 18px;
+            }
+        }
+
+
+        /* =========================
+           Laptop / Desktop
+        ========================= */
+        @media (min-width: 992px) {
+
+            body {
+                padding: 30px;
+            }
+
+            .free-image {
+                max-width: 900px;
+            }
+
+            .whatsapp-btn,
+            .call-btn {
+                width: 230px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Image -->
+    <div class="free-image">
+        <img src="./image/free_all_sim.png" alt="Free Internet">
+    </div>
+
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/966502543424"
+       class="whatsapp-btn"
+       target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+
+    </a>
+
+
+    <!-- Call -->
+    <a href="tel:+966502543424"
+       class="call-btn">
+
+        <i class="fa-solid fa-phone"></i>
+        Call Me
+
+    </a>
+
+</body>
+</html>
